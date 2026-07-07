@@ -43,10 +43,9 @@
 <body class="antialiased selection:bg-[#E2B675] selection:text-[#21110E]">
 
     <!-- Header / Navbar -->
-    <header class="sticky top-0 z-50 bg-[#21110E]/90 backdrop-blur-md border-b border-[#E2B675]/10">
+    <header class="sticky top-0 z-40 bg-[#21110E]/90 backdrop-blur-md border-b border-[#E2B675]/10">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <!-- LOGO DO SITE CONFIGURADA -->
                 <img src="image/ChatGPT Image 27 de jun. de 2026, 17_36_36.png" alt="Melt Cookies Logo" class="h-12 w-12 object-contain rounded-full shadow-md border border-[#E2B675]/20">
                 <span class="font-serif-elegant text-2xl font-bold tracking-wide text-gold">Melt <span class="text-white font-sans text-xs uppercase tracking-widest block -mt-1">Cookies</span></span>
             </div>
@@ -87,16 +86,13 @@
                 </div>
             </div>
 
-            <!-- Destaque Principal com a Imagem da Logo Ampliada -->
+            <!-- Destaque Principal -->
             <div class="flex justify-center relative">
                 <div class="absolute inset-0 bg-[#E2B675]/10 blur-3xl rounded-full scale-75"></div>
                 <div class="relative bg-gradient-to-br from-[#3D221D] to-[#2B1815] p-6 rounded-3xl border border-[#E2B675]/20 shadow-2xl max-w-sm w-full text-center group transition duration-500 hover:border-[#E2B675]/40">
-                    
-                    <!-- Exibição Principal da Logo -->
                     <div class="overflow-hidden rounded-2xl mb-4 bg-[#1A0D0B] p-2">
                         <img src="image/ChatGPT Image 27 de jun. de 2026, 17_36_36.png" alt="Melt Cookies Premium" class="w-full h-auto object-cover rounded-xl group-hover:scale-105 transition duration-500">
                     </div>
-                    
                     <h3 class="font-serif-elegant text-xl font-bold text-gold mb-1">BIGMELT</h3>
                     <p class="text-xs text-[#A8988D] uppercase tracking-wider mb-2">O Mais Pedido da Semana</p>
                     <div class="w-full h-[2px] bg-gradient-to-r from-transparent via-[#E2B675]/30 to-transparent my-3"></div>
@@ -119,49 +115,97 @@
 
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                <!-- Card 1 -->
-             <!-- Card 1 - MINI MELT -->
-<div class="bg-chocolate-card rounded-2xl border border-white/5 p-6 hover:border-[#E2B675]/30 transition group flex flex-col justify-between">
-    <div>
-        <!-- Espaço da Foto do Mini Melt -->
-        <div class="w-full h-48 rounded-xl bg-[#21110E] mb-4 overflow-hidden border border-white/5">
-            <img src="image/minimelt.png" alt="Mini Melt" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
-        </div>
-        <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif-elegant text-lg font-bold text-white group-hover:text-gold transition">MINI MELT</h3>
-            <span class="text-gold font-bold text-lg">R$ 14,90</span>
-        </div>
-        <p class="text-[#A8988D] text-sm leading-relaxed mb-6">Massa deliciosa de chololate e baunilha com gotas do cacau mais puro e o melhor em miniaturas </p>
-    </div>
-    <button onclick="adicionarAoCarrinho('MINI MELT', 14.90)" class="w-full py-3 bg-[#21110E] hover:bg-gold hover:text-[#21110E] text-[#E2B675] font-semibold text-sm rounded-xl transition border border-[#E2B675]/20 hover:border-transparent">
-        Adicionar à Caixa
-    </button>
-</div>
+                <!-- Card 1 - MINI MELT -->
+                <div class="bg-chocolate-card rounded-2xl border border-white/5 p-6 hover:border-[#E2B675]/30 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-48 rounded-xl bg-[#21110E] mb-4 overflow-hidden border border-white/5">
+                            <img src="image/minimelt.png" alt="Mini Melt" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif-elegant text-lg font-bold text-white group-hover:text-gold transition">MINI MELT</h3>
+                            <span class="text-gold font-bold text-lg">R$ 14,90</span>
+                        </div>
+                        <p class="text-[#A8988D] text-sm leading-relaxed mb-6">Massa deliciosa de chocolate e baunilha com gotas do cacau mais puro e o melhor em miniaturas.</p>
+                    </div>
+                    <button onclick="adicionarAoCarrinho('MINI MELT', 14.90)" class="w-full py-3 bg-[#21110E] hover:bg-gold hover:text-[#21110E] text-[#E2B675] font-semibold text-sm rounded-xl transition border border-[#E2B675]/20 hover:border-transparent">
+                        Adicionar à Caixa
+                    </button>
+                </div>
 
-<!-- Card 2 - BIGMELT -->
-<div class="bg-chocolate-card rounded-2xl border border-white/5 p-6 hover:border-[#E2B675]/30 transition group flex flex-col justify-between">
-    <div>
-        <!-- Espaço da Foto do Bigmelt -->
-        <div class="w-full h-48 rounded-xl bg-[#21110E] mb-4 overflow-hidden border border-white/5">
-            <img src="image/bigmelt.png" alt="Bigmelt" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
-        </div>
-        <div class="flex justify-between items-start mb-2">
-            <h3 class="font-serif-elegant text-lg font-bold text-white group-hover:text-gold transition">BIGMELT</h3>
-            <span class="text-gold font-bold text-lg">R$ 16,90</span>
-        </div>
-        <p class="text-[#A8988D] text-sm leading-relaxed mb-6">Massa intensa de cacau 100%, gotas de chocolate meio amargo e um coração transbordando de Nutella pura.</p>
-    </div>
-    <button onclick="adicionarAoCarrinho('BIGMELT', 16.90)" class="w-full py-3 bg-[#21110E] hover:bg-gold hover:text-[#21110E] text-[#E2B675] font-semibold text-sm rounded-xl transition border border-[#E2B675]/20 hover:border-transparent">
-        Adicionar à Caixa
-    </button>
-</div>
+                <!-- Card 2 - BIGMELT -->
+                <div class="bg-chocolate-card rounded-2xl border border-white/5 p-6 hover:border-[#E2B675]/30 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-48 rounded-xl bg-[#21110E] mb-4 overflow-hidden border border-white/5">
+                            <img src="image/bigmelt.png" alt="Bigmelt" class="w-full h-full object-cover group-hover:scale-110 transition duration-300">
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif-elegant text-lg font-bold text-white group-hover:text-gold transition">BIGMELT (100g)</h3>
+                            <span class="text-gold font-bold text-lg">R$ 18,00</span>
+                        </div>
+                        <p class="text-[#A8988D] text-sm leading-relaxed mb-6">Massa intensa de cacau 100%, gotas de chocolate meio amargo e um coração transbordando de sabor. Escolha seu sabor especial!</p>
+                    </div>
+                    <!-- Aciona o Modal de Sabores -->
+                    <button onclick="abrirModalSabores()" class="w-full py-3 bg-[#21110E] hover:bg-gold hover:text-[#21110E] text-[#E2B675] font-semibold text-sm rounded-xl transition border border-[#E2B675]/20 hover:border-transparent">
+                        Escolher Sabores
+                    </button>
+                </div>
 
-           
+                <!-- Card 3 - KIT COOKIETOS -->
+                <div class="bg-chocolate-card rounded-2xl border border-white/5 p-6 hover:border-[#E2B675]/30 transition group flex flex-col justify-between">
+                    <div>
+                        <div class="w-full h-48 rounded-xl bg-[#21110E] mb-4 overflow-hidden border border-white/5 flex items-center justify-center text-4xl">
+                            📦
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-serif-elegant text-lg font-bold text-white group-hover:text-gold transition">KIT COOKIETOS</h3>
+                            <span class="text-gold font-bold text-lg">R$ 18,00</span>
+                        </div>
+                        <p class="text-[#A8988D] text-sm leading-relaxed mb-6">Um kit perfeito com 10 unidades de cookietos (20g cada) mais um incrível pote de brigadeiro irresistível de 38g.</p>
+                    </div>
+                    <button onclick="adicionarAoCarrinho('KIT COOKIETOS (10und 20g + Pote Brigadeiro 38g)', 18.00)" class="w-full py-3 bg-[#21110E] hover:bg-gold hover:text-[#21110E] text-[#E2B675] font-semibold text-sm rounded-xl transition border border-[#E2B675]/20 hover:border-transparent">
+                        Adicionar à Caixa
+                    </button>
+                </div>
 
             </div>
-
         </div>
     </section>
+
+    <!-- Modal de Escolha de Sabores para o Big Melt -->
+    <div id="modal-sabores" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-chocolate-card border border-[#E2B675]/30 w-full max-w-md rounded-2xl overflow-hidden shadow-2xl p-6 space-y-6">
+            <div class="flex justify-between items-start">
+                <div>
+                    <h3 class="font-serif-elegant text-xl font-bold text-gold">Escolha o seu Big Sabor</h3>
+                    <p class="text-xs text-[#A8988D]">Selecione uma opção para o seu Big Melt (100g)</p>
+                </div>
+                <button onclick="fecharModalSabores()" class="text-[#A8988D] hover:text-white text-xl">&times;</button>
+            </div>
+            
+            <form id="form-sabores" class="space-y-3">
+                <label class="flex items-center justify-between p-3 rounded-xl bg-[#21110E] border border-white/5 cursor-pointer hover:border-[#E2B675]/30 transition">
+                    <span class="text-sm font-medium">Nutella Pura (Tradicional)</span>
+                    <input type="radio" name="bigsabor" value="Nutella Pura" checked class="accent-[#E2B675] w-4 h-4">
+                </label>
+                <label class="flex items-center justify-between p-3 rounded-xl bg-[#21110E] border border-white/5 cursor-pointer hover:border-[#E2B675]/30 transition">
+                    <span class="text-sm font-medium">Ninho com Nutella</span>
+                    <input type="radio" name="bigsabor" value="Ninho com Nutella" class="accent-[#E2B675] w-4 h-4">
+                </label>
+                <label class="flex items-center justify-between p-3 rounded-xl bg-[#21110E] border border-white/5 cursor-pointer hover:border-[#E2B675]/30 transition">
+                    <span class="text-sm font-medium">Red Velvet Cream Cheese</span>
+                    <input type="radio" name="bigsabor" value="Red Velvet" class="accent-[#E2B675] w-4 h-4">
+                </label>
+                <label class="flex items-center justify-between p-3 rounded-xl bg-[#21110E] border border-white/5 cursor-pointer hover:border-[#E2B675]/30 transition">
+                    <span class="text-sm font-medium">Chocolate Meio Amargo Especial</span>
+                    <input type="radio" name="bigsabor" value="Chocolate Meio Amargo" class="accent-[#E2B675] w-4 h-4">
+                </label>
+            </form>
+
+            <button onclick="confirmarSaborBigMelt()" class="w-full py-3 bg-gold text-[#21110E] font-bold text-sm rounded-xl transition hover:bg-[#d4a563] shadow-md">
+                Confirmar e Adicionar à Sacola
+            </button>
+        </div>
+    </div>
 
     <!-- O Segredo da Textura -->
     <section id="segredo" class="py-20 max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -195,7 +239,7 @@
     </footer>
 
     <!-- Widget Flutuante do Carrinho -->
-    <div id="cart-widget" class="fixed bottom-6 right-6 z-50 bg-[#E2B675] text-[#21110E] p-4 rounded-2xl shadow-2xl items-center gap-4 border border-white/20 hidden transition duration-300">
+    <div id="cart-widget" class="fixed bottom-6 right-6 z-30 bg-[#E2B675] text-[#21110E] p-4 rounded-2xl shadow-2xl items-center gap-4 border border-white/20 hidden transition duration-300">
         <div class="flex items-center gap-3">
             <span class="text-2xl">🛒</span>
             <div>
@@ -221,6 +265,29 @@
             atualizarInterface();
         }
 
+        // Funções para controle do Modal do BigMelt
+        function abrirModalSabores() {
+            const modal = document.getElementById('modal-sabores');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+        }
+
+        function fecharModalSabores() {
+            const modal = document.getElementById('modal-sabores');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+        }
+
+        function confirmarSaborBigMelt() {
+            const form = document.getElementById('form-sabores');
+            const saborSelecionado = form.elements['bigsabor'].value;
+            const nomeItemCompleto = `BIGMELT 100g (${saborSelecionado})`;
+            
+            // Adiciona o BigMelt com o sabor específico ao carrinho por R$ 18,00
+            adicionarAoCarrinho(nomeItemCompleto, 18.00);
+            fecharModalSabores();
+        }
+
         function atualizarInterface() {
             let totalItens = 0;
             let valorTotal = 0;
@@ -243,17 +310,17 @@
         }
 
         function enviarWhatsApp() {
-            const numeroWhatsApp = "559881140354"; // INSIRA SEU NUMERO AQUI
+            const numeroWhatsApp = "559881140354"; // SEU NUMERO MANTIDO
             let texto = "Olá! Gostaria de fazer um pedido na Melt Cookies: \n\n";
             let valorTotal = 0;
 
             for (let produto in carrinho) {
                 let subtotal = carrinho[produto].preco * carrinho[produto].qtd;
-                texto += `• ${carrinho[produto].qtd}x ${produto} - R$ ${subtotal.toFixed(2)}\n`;
+                texto += `• ${carrinho[produto].qtd}x ${produto} - R$ ${subtotal.toFixed(2).replace('.', ',')}\n`;
                 valorTotal += subtotal;
             }
 
-            texto += `\n*Total do Pedido:* R$ ${valorTotal.toFixed(2)}\n\nQuero combinar a entrega!`;
+            texto += `\n*Total do Pedido:* R$ ${valorTotal.toFixed(2).replace('.', ',')}\n\nQuero combinar a entrega!`;
             const urlEncoded = encodeURIComponent(texto);
             window.open(`https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${urlEncoded}`, '_blank');
         }
